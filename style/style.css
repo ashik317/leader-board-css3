@@ -107,6 +107,7 @@ Lates courses
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 26px;
+    position: ;
 
 
 }
@@ -163,4 +164,46 @@ Lates courses
     color: #FF4A60;
     border-radius: 15%;
     font-size: 14.6913px;
+}
+
+/*.............................
+Using media-qeary .............*/
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog,
+    .player {
+        flex-direction: column;
+    }
+
+    .player,
+    .blog {
+        justify-content: center;
+    }
+
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet divices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
